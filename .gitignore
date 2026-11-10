@@ -1,0 +1,7 @@
+# Ignore node_modules anywhere in the repo
+**/node_modules/
+
+# Ignore .env files anywhere in the repo
+**/.env
+
+
