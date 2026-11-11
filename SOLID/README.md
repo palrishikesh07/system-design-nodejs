@@ -25,35 +25,21 @@ change, test and maintain.
 SOLID is a group of five object-oriented design principles:
 
   -----------------------------------------------------------------------
-  Letter            Principle         Easy phrase       Banking example
-  ----------------- ----------------- ----------------- -----------------
-  S                 Single            One               Separate account,
-                    Responsibility    responsibility    statement and
-                                                        notification work
-
-  O                 Open/Closed       Extend without    Add UPI without
-                                      repeatedly        rewriting
-                                      modifying stable  transfer
-                                      code              orchestration
-
-  L                 Liskov            Subtypes honour   Do not make every
-                    Substitution      their contracts   account support
-                                                        overdraft
-
-  I                 Interface         Small, focused    Statement reader
-                    Segregation       interfaces        need not
-                                                        implement
-                                                        withdrawal
-
-  D                 Dependency        Depend on         Transfer service
-                    Inversion         abstractions      depends on
-                                                        repository
-                                                        contracts
+S --- Single Responsibility Principle (SRP)\
+O --- Open/Closed Principle (OCP)\
+L --- Liskov Substitution Principle (LSP)\
+I --- Interface Segregation Principle (ISP)\
+D --- Dependency Inversion Principle (DIP)
+ 
   -----------------------------------------------------------------------
 
-**Why SOLID matters:** - Reduces tight coupling. - Makes code easier to
-unit test. - Helps isolate changes. - Supports adding new business
-capabilities. - Makes responsibilities and contracts clearer.
+**Why SOLID matters:** 
+- Reduces tight coupling. 
+- Makes code easier to
+unit test. 
+- Helps isolate changes. 
+- Supports adding new business capabilities. 
+- Makes responsibilities and contracts clearer.
 
 **Important:** SOLID is guidance, not a rule to create an interface or
 class for every method. Too many abstractions can make a simple
@@ -148,7 +134,7 @@ its own class.
 
 ### Interview answer
 
-> SRP means a module should have one cohesive responsibility and one
+> SRP means a module should have one cohesive(united and working together effectively:) responsibility and one
 > main reason to change. In a banking application, I would separate
 > account creation, SMS notifications and statement generation because
 > each has different business rules and different reasons to change.
